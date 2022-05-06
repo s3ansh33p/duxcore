@@ -11,6 +11,9 @@ module.exports = {
         5: "5px",
         8: "8px",
       },
+      boxShadow: {
+        "c-10": "0 0px 10px -1px var(--tw-shadow-color), 0 0px 0px 0px #00ff1c",
+      }
     },
     colors: {
       black: "#000",

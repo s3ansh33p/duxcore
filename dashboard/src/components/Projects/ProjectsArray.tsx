@@ -16,13 +16,22 @@ export const ProjectsArray: React.FC<ProjectsArrayProps> = ({
   }, []);
 
   return (
-    <div
-      className="grid gap-1"
-      style={{ gridTemplateColumns: "repeat(auto-fill, minmax(20rem, 1fr))" }}
-    >
-      {projects.map((project) => (
-        <ProjectBox key={project.id} data={project} />
-      ))}
+    // Header
+    <div>
+      <div className="mb-2">
+        <h4 className="font-semibold">Goldyplace</h4>
+        <p style={{
+          fontSize: "14px",
+        }}>consectetur adipiscing elit, sed</p>
+      </div>
+      <div
+        className="grid gap-1"
+        style={{ gridTemplateColumns: "repeat(auto-fill, minmax(20rem, 1fr))" }}
+        >
+        {projects.map((project) => (
+          <ProjectBox key={project.id} data={project} />
+          ))}
+      </div>
     </div>
   );
 };
